@@ -7,4 +7,75 @@
 body {
     background-color: skyblue;
     color: white;
+    cursor: url("assets/cane_cursor2.png"), auto;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    
+}
+
+@keyframes flyRight {
+    from {left: 120vw; right: -20vw;}
+    to {right: 120vw; left: -20vw;}
+}
+
+@keyframes flyLeft {
+    from {right: 110vw; left: -20vw;}
+    to {left: 120vw; right: -20vw;}
+}
+
+.crane {
+    position: absolute;
+}
+
+.small {
+    width: 100px;
+    height: auto;
+}
+
+.big {
+    width: 175px;
+    height: auto;
+}
+
+.left {
+    animation: flyRight infinite linear;
+}
+
+.right {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    animation: flyLeft infinite linear;
+}
+
+#c1 {
+    top: 0;
+    animation-duration: 6s;
+}
+
+#c2 {
+    top: 75px;
+    animation-duration: 3s;
+}
+
+#c3 {
+    top: 150px;
+    animation-duration: 5s;
+}
+
+#c4 {
+    top: 300px;
+    animation-duration: 4s;
+}
+
+#c5 {
+    top: 225px;
+    animation-duration: 6s;
 }
