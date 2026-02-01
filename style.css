@@ -1,0 +1,10 @@
+* { /* full default reset. KEEP AT TOP*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* as opposed to content-box, box size includes border and padding rather than adding them on*/
+}
+
+body {
+    background-color: skyblue;
+    color: white;
+}
