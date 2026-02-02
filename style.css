@@ -17,6 +17,10 @@ body {
     height: 100vh;
 }
 
+#audiobtn {
+    display: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -142,4 +146,21 @@ a:hover {
 #c10 {
     top: 75vh;
     animation-duration: 3s;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    #bg {
+        position: fixed;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #audiobtn {
+    display: block;
+    }
 }
