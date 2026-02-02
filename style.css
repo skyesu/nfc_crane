@@ -2,17 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* as opposed to content-box, box size includes border and padding rather than adding them on*/
+    cursor: url("assets/cane_cursor2.png"), auto;
 }
 
 body {
-    background-color: skyblue;
     color: white;
     cursor: url("assets/cane_cursor2.png"), auto;
     overflow-x: hidden;
 }
 
+#bg {
+    background-color: skyblue;
+    width: 100vw;
+    height: 100vh;
+}
+
 img {
     max-width: 100%;
+}
+
+#videolink {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Meie Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18pt;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 20px aliceblue;
+    transition: box-shadow 0.3s, background-color 0.3s, border 0.3s;
+}
+
+#videolink:hover {
+    box-shadow: 0 0 30px white;
+    background-color: white;
+    border: 1px solid lightsteelblue;
+}
+
+a {
+    text-decoration: none;
+    color: navy;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: cornflowerblue;
 }
 
 .row {
@@ -61,21 +100,46 @@ img {
 }
 
 #c2 {
-    top: 75px;
+    top: 10vh;
     animation-duration: 3s;
 }
 
 #c3 {
-    top: 150px;
+    top: 20vh;
     animation-duration: 5s;
 }
 
 #c4 {
-    top: 300px;
+    top: 40vh;
     animation-duration: 4s;
 }
 
 #c5 {
-    top: 225px;
-    animation-duration: 6s;
+    top: 30vh;
+    animation-duration: 5.5s;
+}
+
+#c6 {
+    top: 50vh;
+    animation-duration: 3.5s;
+}
+
+#c7 {
+    top: 60vh;
+    animation-duration: 4.5s;
+}
+
+#c8 {
+    top: 70vh;
+    animation-duration: 6.5s;
+}
+
+#c9 {
+    top: 80vh;
+    animation-duration: 4s;
+}
+
+#c10 {
+    top: 75vh;
+    animation-duration: 3s;
 }

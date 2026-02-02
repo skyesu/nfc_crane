@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-<audio autoplay loop src="assets/portofino_2.mp3"></audio>
+<audio id="portofino" autoplay loop src="assets/portofino_2.mp3">This browser does not support the audio tag :[</audio>
 
-<h1><i>weeeooweeooo take this crane:!</i></h1>
+<div id="bg">
+<button id="audiobtn" onclick="audioPlay()">click if you're on mobile</button>
+
+<!-- <h1><i>weeeooweeooo take this crane:!</i></h1> -->
+<button id="videolink"><a href="https://youtu.be/YDlfbyhbSMc?si=Epxw_x4SXD72mEMI&t=12102" target="_blank">behold my inception</a></button>
 
 <div class="row">
     <img src="assets/cane.png" class="crane small left" id="c1">
@@ -32,8 +38,28 @@
     <img src="assets/cane.png" class="crane big left" id="c5">
 </div>
 
+<div class="row">
+    <img src="assets/cane.png" class="crane big left" id="c6">
+</div>
 
-    <a href="https://youtu.be/YDlfbyhbSMc?si=Epxw_x4SXD72mEMI&t=12102" target="_blank">behold my inception</a>
+<div class="row">
+    <img src="assets/cane.png" class="crane big right" id="c7">
+</div>
+
+<div class="row">
+    <img src="assets/cane.png" class="crane small right" id="c8">
+</div>
+
+<div class="row">
+    <img src="assets/cane.png" class="crane small left" id="c9">
+</div>
+
+<div class="row">
+    <img src="assets/cane.png" class="crane big right" id="c10">
+</div>
+
+
+</div>
 <script src="script.js"></script>
 </body>
 </html>
